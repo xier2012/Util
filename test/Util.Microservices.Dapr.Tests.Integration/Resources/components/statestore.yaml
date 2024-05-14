@@ -1,0 +1,13 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: statestore
+spec:
+  type: state.mongodb
+  metadata:
+  - name: host
+    value: localhost
+  - name: databaseName
+    value: util_dapr_tests
+  - name: collectionName
+    value: default
